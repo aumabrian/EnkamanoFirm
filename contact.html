@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enkamano</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/796f78da33.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-----Header Section----->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo5.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="team.html">LAWYERS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <!----End Header Section---->
+
+    
+    <!-----Contact Us Section----->
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Ngong Road, ABC building</h5>
+                        <p>Nairobi, Kenya</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+254 798 476671</h5>
+                        <p>Monday to Friday, 8AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                        <h5>otiibrian1@gmail.com</h5>
+                        <p>Email us your querry</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <input type="text" name="subject" placeholder="Your subject" required>
+                    <textarea rows="8" name="message" placeholder="Message"></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!----End Contact Us Section---->
+
+
+    <!-----Location Section-->
+    <section class="location">
+        <h3>Map Location</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.4418087217634!2d36.89102802425622!3d-1.2402417421701815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f15e954a0803f%3A0xaea25866314b28bc!2sJayJay%20apartments!5e0!3m2!1sen!2ske!4v1701718192035!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <!----End Location Section---->
+
+
+    <!-----Footer Section----->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam vitae neque corporis. Quam ea non tempora
+            sequi, laudantium tenetur saepe, voluptas temporibus minima labore soluta! Suscipit recusandae sapiente modi
+            repellat.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin-square"></i>
+        </div>
+        <p>Brian Kauma &copy; 2024. All rights reserved.</p>
+    </section>
+    <!----End Footer Section---->
+
+
+    <!--------JavaScript for toggle Menu------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <!--------End JavScript for toggle Menu------->
+    
+</body>
+</html>

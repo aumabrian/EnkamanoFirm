@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enkamano</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/796f78da33.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-----Header Section----->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo5.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="team.html">LAWYERS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    <!----End Header Section---->
+
+
+    <!-----About us content-->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>The Best & Fast Growing Law Frim!!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, repudiandae expedita minima corporis harum a iusto laudantium labore aut nihil? Perspiciatis incidunt dolore similique nulla iste iusto rem cum laudantium.</p>
+                <a href="contact.html" class="hero-btn red-btn">Explore Now</a>
+            </div>
+            <div class="about-col">
+                <img src="images/lw3.png">
+            </div>
+        </div>
+    </section>
+    <!----End About us content-->
+
+
+    <!-----Footer Section----->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam vitae neque corporis. Quam ea non tempora
+            sequi, laudantium tenetur saepe, voluptas temporibus minima labore soluta! Suscipit recusandae sapiente modi
+            repellat.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin-square"></i>
+        </div>
+        <p>Brian Kauma &copy; 2024. All rights reserved.</p>
+    </section>
+    <!----End Footer Section---->
+
+
+    <!--------JavaScript for toggle Menu------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <!--------End JavScript for toggle Menu------->
+
+
+</body>
+
+</html>
